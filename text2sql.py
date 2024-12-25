@@ -41,7 +41,7 @@ def create_sql_query(question):
     """
     # Lấy các thành phần từ file .env
     project_id = "group-8-445019"
-    dataset_id = os.getenv("DATASET_ID")
+    dataset_id = "group-8-445019.visualization"
     table_id = "Vietnam_Airlines"
 
     # Kiểm tra nếu bất kỳ biến nào bị thiếu
