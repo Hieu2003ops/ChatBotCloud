@@ -1,4 +1,4 @@
-FROM python:3.11.16-slim-buster
+FROM python:3.9.16-slim-buster
 
 # Sử dụng các biến môi trường từ bên ngoài
 ENV BASE_URL=${BASE_URL}
