@@ -1,0 +1,83 @@
+2024-12-25 00:11:40,605 - AppLogger - INFO - Project ID: group-8-445019
+2024-12-25 00:11:40,606 - AppLogger - INFO - Dataset ID: visualization
+2024-12-25 00:11:40,606 - AppLogger - INFO - Table ID: Vietnam_Airlines
+2024-12-25 00:11:40,607 - AppLogger - INFO - Full Table ID: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 00:11:40,609 - AppLogger - INFO - BigQuery client created successfully.
+2024-12-25 00:12:21,880 - AppLogger - INFO - Project ID: group-8-445019
+2024-12-25 00:12:21,880 - AppLogger - INFO - Dataset ID: visualization
+2024-12-25 00:12:21,880 - AppLogger - INFO - Table ID: Vietnam_Airlines
+2024-12-25 00:12:21,881 - AppLogger - INFO - Full Table ID: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 00:12:21,882 - AppLogger - INFO - BigQuery client created successfully.
+2024-12-25 02:18:31,924 - AppLogger - INFO - Starting Text2SQL pipeline...
+2024-12-25 02:20:48,606 - AppLogger - INFO - Starting Text2SQL pipeline...
+2024-12-25 02:20:51,604 - AppLogger - INFO - Using Table ID: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 02:21:12,570 - AppLogger - INFO - User question: top 10 customers 's name that have score lowest
+2024-12-25 02:21:12,571 - AppLogger - INFO - Generating SQL query for question: top 10 customers 's name that have score lowest
+2024-12-25 02:21:15,075 - AppLogger - INFO - Generated SQL Query: SELECT `name`
+FROM `group-8-445019.visualization.Vietnam_Airlines`
+ORDER BY `score` ASC
+LIMIT 10;
+2024-12-25 02:21:15,082 - AppLogger - INFO - Executing SQL query: SELECT `name`
+FROM `group-8-445019.visualization.Vietnam_Airlines`
+ORDER BY `score` ASC
+LIMIT 10;
+2024-12-25 02:21:15,922 - AppLogger - ERROR - Failed to execute query: SELECT `name`
+FROM `group-8-445019.visualization.Vietnam_Airlines`
+ORDER BY `score` ASC
+LIMIT 10;
+Error: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/group-8-445019/jobs?prettyPrint=false: Access Denied: Project group-8-445019: User does not have bigquery.jobs.create permission in project group-8-445019.
+
+Location: None
+Job ID: e7eccbb4-17dd-49da-a92a-739b3b81b313
+
+2024-12-25 02:21:15,926 - AppLogger - ERROR - An error occurred: Failed to execute query: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/group-8-445019/jobs?prettyPrint=false: Access Denied: Project group-8-445019: User does not have bigquery.jobs.create permission in project group-8-445019.
+
+Location: None
+Job ID: e7eccbb4-17dd-49da-a92a-739b3b81b313
+
+2024-12-25 02:33:25,787 - AppLogger - INFO - User question: top 10 customers 's name that have score lowest
+2024-12-25 02:33:25,797 - AppLogger - INFO - Initializing BigQuery client...
+2024-12-25 02:33:25,798 - AppLogger - INFO - Using table: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 02:33:25,800 - AppLogger - INFO - Full table ID resolved: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 02:33:25,800 - AppLogger - INFO - Generating SQL query for question: top 10 customers 's name that have score lowest
+2024-12-25 02:33:27,897 - AppLogger - INFO - Generated SQL Query: SELECT `name` 
+FROM `group-8-445019.visualization.Vietnam_Airlines` 
+ORDER BY `score` ASC 
+LIMIT 10;
+2024-12-25 02:33:27,900 - AppLogger - INFO - Executing SQL query: SELECT `name` 
+FROM `group-8-445019.visualization.Vietnam_Airlines` 
+ORDER BY `score` ASC 
+LIMIT 10;
+2024-12-25 02:33:29,880 - AppLogger - INFO - SQL query executed successfully.
+2024-12-25 02:33:29,889 - AppLogger - INFO - Generating final response...
+2024-12-25 02:33:34,387 - AppLogger - INFO - Final response generated successfully.
+2024-12-25 02:33:34,391 - AppLogger - INFO - Pipeline completed successfully.
+2024-12-25 02:34:04,827 - AppLogger - INFO - User question: how many records are there
+2024-12-25 02:34:04,828 - AppLogger - INFO - Initializing BigQuery client...
+2024-12-25 02:34:04,828 - AppLogger - INFO - Using table: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 02:34:04,830 - AppLogger - INFO - Full table ID resolved: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 02:34:04,830 - AppLogger - INFO - Generating SQL query for question: how many records are there
+2024-12-25 02:34:06,746 - AppLogger - INFO - Generated SQL Query: SELECT COUNT(*) FROM `group-8-445019.visualization.Vietnam_Airlines`;
+2024-12-25 02:34:06,757 - AppLogger - INFO - Executing SQL query: SELECT COUNT(*) FROM `group-8-445019.visualization.Vietnam_Airlines`;
+2024-12-25 02:34:08,794 - AppLogger - INFO - SQL query executed successfully.
+2024-12-25 02:34:08,797 - AppLogger - INFO - Generating final response...
+2024-12-25 02:34:11,868 - AppLogger - INFO - Final response generated successfully.
+2024-12-25 02:34:11,875 - AppLogger - INFO - Pipeline completed successfully.
+2024-12-25 10:03:08,268 - AppLogger - INFO - User question: How many records are there
+2024-12-25 10:03:08,271 - AppLogger - INFO - Using table: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 10:03:08,273 - AppLogger - INFO - Full table ID resolved: group-8-445019.visualization.Vietnam_Airlines
+2024-12-25 10:03:08,274 - AppLogger - INFO - Generating SQL query for question: How many records are there
+2024-12-25 10:03:10,618 - AppLogger - INFO - Generated SQL Query: SELECT COUNT(*) FROM `group-8-445019.visualization.Vietnam_Airlines`;
+2024-12-25 10:03:10,619 - AppLogger - INFO - Generated SQL Query: SELECT COUNT(*) FROM `group-8-445019.visualization.Vietnam_Airlines`;
+2024-12-25 10:03:10,619 - AppLogger - INFO - Executing SQL query: SELECT COUNT(*) FROM `group-8-445019.visualization.Vietnam_Airlines`;
+2024-12-25 10:03:12,757 - AppLogger - INFO - SQL query executed successfully.
+2024-12-25 10:03:12,758 - AppLogger - INFO - SQL Result: [{'f0_': 747}]
+2024-12-25 10:03:12,759 - AppLogger - INFO - Generating final response...
+2024-12-25 10:03:17,496 - AppLogger - INFO - Final response generated successfully.
+2024-12-25 10:03:17,497 - AppLogger - INFO - Response: As we delve into the treasure trove of our database, we uncover a vital metric that sets the stage for our analysis: the total number of records. This fundamental insight reveals that our dataset comprises a substantial 747 records, a rich repository of information waiting to be mined for valuable insights.
+
+This sizable dataset provides a robust foundation for our analysis, allowing us to draw meaningful conclusions and identify trends that would be less pronounced in smaller datasets. With this many records, we can confidently explore correlations, patterns, and relationships that may not be immediately apparent, ultimately informing strategic business decisions.
+
+As we move forward, this comprehensive dataset will enable us to drill down into specific segments, identify areas of opportunity, and uncover hidden gems that can drive growth and improvement. The sheer volume of records at our disposal ensures that our findings will be statistically significant, reliable, and actionable.
+
+In essence, this dataset offers a remarkable opportunity to gain a deeper understanding of our business, customers, and market dynamics. By leveraging these 747 records, we can craft a narrative that resonates with our stakeholders, drives data-driven decision-making, and propels our organization forward.
