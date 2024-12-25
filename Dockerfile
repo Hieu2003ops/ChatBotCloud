@@ -26,4 +26,4 @@ RUN pip install -r /api/requirements.txt
 
 WORKDIR /api
 
-CMD ['python', 'main.py']
+CMD ["python", "main.py"]
