@@ -22,14 +22,15 @@ def process_question(question):
         AppLog.info(f"User question: {question}")
 
         # Lấy thông tin BigQuery từ .env
-        project_id = os.getenv("PROJECT_ID")
-        dataset_id = os.getenv("DATASET_ID")
-        table_id = os.getenv("TABLE_ID")
+        # group-8-445019
+        project_id = "group-8-445019"
+        dataset_id = "group-8-445019.visualization"
+        table_id = "Vietnam_Airlines"
         if not project_id or not dataset_id or not table_id:
             raise ValueError("PROJECT_ID, DATASET_ID, or TABLE_ID is missing in environment variables.")
 
         # Tạo full_table_id
-        full_table_id = f"{project_id}.{dataset_id}.{table_id}"
+        full_table_id = f"{dataset_id}.{table_id}"
         AppLog.info(f"Using table: {full_table_id}")
         client = None
 

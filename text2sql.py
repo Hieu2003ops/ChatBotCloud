@@ -40,16 +40,16 @@ def create_sql_query(question):
         str: Câu lệnh SQL được tạo ra.
     """
     # Lấy các thành phần từ file .env
-    project_id = os.getenv("PROJECT_ID")
+    project_id = "group-8-445019"
     dataset_id = os.getenv("DATASET_ID")
-    table_id = os.getenv("TABLE_ID")
+    table_id = "Vietnam_Airlines"
 
     # Kiểm tra nếu bất kỳ biến nào bị thiếu
     if not project_id or not dataset_id or not table_id:
         raise ValueError("PROJECT_ID, DATASET_ID, or TABLE_ID is missing in the environment variables.")
 
     # Gộp thành `full_table_id`
-    full_table_id = f"{project_id}.{dataset_id}.{table_id}"
+    full_table_id = f"{dataset_id}.{table_id}"
     AppLog.info(f"Full table ID resolved: {full_table_id}")
 
     sql_prompt = f"""

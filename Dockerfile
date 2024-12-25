@@ -26,4 +26,8 @@ RUN pip install -r /api/requirements.txt
 
 WORKDIR /api
 
+COPY service-account.json /app/service-account.json
+
+EXPOSE 8080
+
 CMD ["python", "main.py"]

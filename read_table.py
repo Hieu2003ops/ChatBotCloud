@@ -24,9 +24,9 @@ def create_keyfile_dict():
 
 async def read_table():
     # Get environment variables
-    project_id = os.getenv("PROJECT_ID")
-    dataset_id = os.getenv("DATASET_ID")
-    table_id = os.getenv("TABLE_ID")
+    project_id = "group-8-445019"
+    dataset_id = "group-8-445019.visualization"
+    table_id = "Vietnam_Airlines"
 
     # Log the details for debugging
     AppLog.info(f"Project ID: {project_id}")
@@ -38,7 +38,7 @@ async def read_table():
         raise ValueError("Ensure PROJECT_ID, DATASET_ID, and TABLE_ID are set in environment variables.")
 
     # Combine to form the full table reference
-    full_table_id = f"{project_id}.{dataset_id}.{table_id}"
+    full_table_id = f"{dataset_id}.{table_id}"
     AppLog.info(f"Full Table ID: {full_table_id}")
     client = None
 
